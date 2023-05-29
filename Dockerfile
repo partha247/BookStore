@@ -4,5 +4,5 @@ WORKDIR /BookStore
 COPY . .
 COPY pom.xml .
 RUN mvn clean package  -Dmaven.test.skip
-EXPOSE 8080:8080
+EXPOSE 8080
 CMD mvn spring-boot:run
